@@ -13,20 +13,20 @@ const router = createRouter({
     history: createWebHistory(),
     routes: [
         { 
-            path: '/signup', 
+            path: '/khelboo-credentials/signup', 
             components: {
                 mainContent:SignUp,
                 subContent:InputLogin 
             }
         },
         { 
-            path: '/otp', 
+            path: '/khelboo-credentials/otp', 
             components:{
                 mainContent:OtpPage
             }
         },
         { 
-            path: '/login', 
+            path: '/khelboo-credentials/login', 
             components:{
                 mainContent:LoginPage
             }

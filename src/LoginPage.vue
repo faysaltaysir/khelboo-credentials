@@ -18,8 +18,8 @@ export default{
             <p class="welcome">Welcome Back!</p>
             <p class="para">Enter your credential to access your account</p>
             <div class="btns">
-                <router-link to="/login"><button class="btn login">Log In</button></router-link>
-                <router-link to="/signup"><button class="btn signup">Sign Up</button></router-link>
+                <router-link to="/khelboo-credentials/login"><button class="btn login">Log In</button></router-link>
+                <router-link to="/khelboo-credentials/signup"><button class="btn signup">Sign Up</button></router-link>
             </div>
 
             <input-login></input-login>
