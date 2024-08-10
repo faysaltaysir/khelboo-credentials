@@ -2,21 +2,25 @@
 <div class="inputs">
     <div class="phone same">
         <p>Phone Number</p>
-        <input type="text" name="phone" id="phone">
+        <input type="text" name="phone" id="phone" class="input-box-style">
     </div>
     <div class="password same">
         <p>Password</p>
-        <input type="text" name="password" id="password">
+        <input type="password" name="password" id="password" class="input-box-style">
     </div>
     <div class="confirm same">
         <p>Confirm Password</p>
-        <input type="text" name="confpass" id="confpass">
+        <input type="password" name="confpass" id="confpass" class="input-box-style">
+    </div>
+    <div class="button-signup">
+        <router-link to="/khelboo-credentials/otp" class="btn signup2">Sign Up</router-link>
     </div>
     
 </div>    
 </template>
 
 <style scoped>
+
 .same{
     height: 81px;
     display: flex;
@@ -30,21 +34,16 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    /* align-items: center; */
     width: 100%;
-    height: 285px;
+    height: max-content;
     text-align: left;
     color: #433E3F;
     font-size: 1rem;
+    /* background-color: aqua; */
 }
-input{
-    width: 100%;
-    height: 55px;
-    border-radius: 7px; 
-    border: 1px solid #D9D9D9;
-    margin-bottom: 10px;
-    font-size: 1.5rem;
-    margin-top: 5px;
-}
+
+
 </style>
 <script>
 export default{

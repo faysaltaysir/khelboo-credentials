@@ -1,8 +1,10 @@
 <script>
 import InputSignup from './components/InputSignup.vue';
+
 export default{
+    name: 'SignUp',
     components: {
-        InputSignup,
+        InputSignup
     }
 }
 </script>
@@ -14,20 +16,24 @@ export default{
         </div>
         <!-- right -->
         <div class="page-right">
+            <!-- head -->
             <div class="head">
                 <p><img src="./assets/logo-main.png" alt="" class="logo"></p>
             <p class="welcome">Welcome Back!</p>
             <p class="para">Enter your credential to access your account</p>
             </div>
-            
+            <!-- signup login -->
             <div class="btns">
                 
                 <router-link to="/khelboo-credentials/login" class="btn login">Log In</router-link>
                 <router-link to="/khelboo-credentials/signup" class="btn signup">Sign Up</router-link>
                 
             </div>
+            <!-- inputs -->
             <input-signup></input-signup>
             <!-- <router-view name="subContent"></router-view> -->
+
+             <!-- extra parts -->
             <div class="extra">
                 
                 <router-link to="/khelboo-credentials/otp" class="btn signup2">Sign Up</router-link>
@@ -69,7 +75,6 @@ export default{
     /* right: px; */
     width: 55%;
     background-color: #FB8904;
-    color: #FFF;
     /* left: 00px; */
     right: 0px;
     z-index: 2;

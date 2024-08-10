@@ -5,7 +5,6 @@
                 <p class="txt">OTP Fillup</p>
             </div>
             <div class="otp-boxs">
-
                 <input type="text" class="box">
                 <input type="text" class="box">
                 <p class="otp-hipen">-</p>
@@ -13,9 +12,12 @@
                 <input type="text" class="box">
             </div>
         </div>
-
+       
     </div>
-
+    <div class="button-signup">
+        <router-link to="/khelboo-credentials/login" class="btn signup2" active-class="active">Sign Up</router-link>
+    </div>
+    
 </template>
 <style scoped>
 .bind {
@@ -61,11 +63,20 @@
 
 .box {
     border-radius: 5px;
-    width: 21%;
+    width: 19%;
     height: 55px;
     max-width: 100px;
     border: 1px solid #D9D9D9;
+    padding-left: 10px;
+    font-size: 2rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    
+}
 
+.box:focus {
+  border-color: #007bff; 
+  box-shadow: 0 0 8px 2px rgba(0, 123, 255, 0.7); 
+  outline: none; 
 }
 
 @media (max-width: 700px) {

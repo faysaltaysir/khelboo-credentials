@@ -1,5 +1,5 @@
 <script>
-import OtpView from './components/OtpView.vue';
+import OtpView from './components/InputOtp.vue';
 export default{
     components: {
         OtpView,

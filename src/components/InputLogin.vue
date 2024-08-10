@@ -1,9 +1,9 @@
 <template>
     <div class="inputs">
         <p>Email/Phone Number</p>
-        <input type="text" name="phone" id="phone" class="input-text">
+        <input type="text" name="phone" id="phone" class="input-text input-box-style">
         <p>Password</p>
-        <input type="text" name="password" id="password" class="input-text">
+        <input type="text" name="password" id="password" class="input-text input-box-style">
         <div class="pass-rem">
             <div class="rem">
                 <input type="checkbox" name="remember" id="remember" class="check">
@@ -12,8 +12,10 @@
             <div class="forget">
                 <a href="">Forget Password?</a>
             </div>
+        </div> 
+        <div class="button-signup">
+            <router-link to="/khelboo-credentials/otp" class="btn signup2">Log In</router-link> 
         </div>
-        
     </div>    
 
     </template>
