@@ -18,22 +18,16 @@ export default{
             <p class="welcome">Welcome Back!</p>
             <p class="para">Enter your credential to access your account</p>
             <div class="btns">
-                <router-link to="/khelboo-credentials/login">
-                    <button class="btn login">Log In</button>
-                </router-link>
+                <router-link to="/khelboo-credentials/login" class="btn login">Log In</router-link>
                 
-                <router-link to="/khelboo-credentials/signup">
-                    <button class="btn signup">Sign Up</button>
-                </router-link>
+                <router-link to="/khelboo-credentials/signup" class="btn signup">Sign Up</router-link>
                 
                 
             </div>
             <otp-view></otp-view>
             <!-- <router-view name="subContent"></router-view> -->
             <div class="extra">
-                <router-link to="/khelboo-credentials/login">
-                    <button class="btn signup2">Sign Up</button>
-                </router-link>
+                <router-link to="/khelboo-credentials/login" class="btn signup2">Sign Up</router-link>
                 <div class="or">
                     <hr>
                     <p class="orin">or</p>
@@ -51,21 +45,7 @@ export default{
     
 </template>
 <style scoped>
-.login{
-    background-color: #D9D9D9;
-    color: #474747;
-    position: relative;
-    left: 10px;
-    z-index: 1;
-    
-}
-.signup{
-    background-color: #FB8904;
-    color: #FFF;
-    position: relative;
-    right: 10px;
-    z-index: 2;
-}
+
 .login:hover{
     background-color: #b3b2b2;
 

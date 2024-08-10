@@ -9,7 +9,7 @@ export default defineConfig({
   plugins: [
     vue(),
   ],
-  base: '/khelboo-credentials/',
+  base: '/khelboo-credentials/signup',
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))

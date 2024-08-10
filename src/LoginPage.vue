@@ -18,8 +18,8 @@ export default{
             <p class="welcome">Welcome Back!</p>
             <p class="para">Enter your credential to access your account</p>
             <div class="btns">
-                <router-link to="/khelboo-credentials/login"><button class="btn login">Log In</button></router-link>
-                <router-link to="/khelboo-credentials/signup"><button class="btn signup">Sign Up</button></router-link>
+                <router-link to="/khelboo-credentials/login" class="btn login">Log In</router-link>
+                <router-link to="/khelboo-credentials/signup" class="btn signup">Sign Up</router-link>
             </div>
 
             <input-login></input-login>
@@ -46,18 +46,23 @@ export default{
     
 </template>
 <style scoped>
+
 .login{
     background-color: #FB8904;
-    position: relative;
-    left: 10px;
-    z-index: 2;
+    width: 50%;
     color: #FFF;
+    position: absolute;
+    left: 0px;
+    z-index: 2;
 }
 .signup{
+    position: absolute;
+    /* right: px; */
+    width: 55%;
     background-color: #D9D9D9;
     color: #474747;
-    position: relative;
-    right: 10px;
+    /* left: 00px; */
+    right: 0px;
     z-index: 1;
 }
 .signup:hover{

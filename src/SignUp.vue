@@ -14,23 +14,23 @@ export default{
         </div>
         <!-- right -->
         <div class="page-right">
-            <p><img src="./assets/logo-main.png" alt="" class="logo"></p>
+            <div class="head">
+                <p><img src="./assets/logo-main.png" alt="" class="logo"></p>
             <p class="welcome">Welcome Back!</p>
             <p class="para">Enter your credential to access your account</p>
+            </div>
+            
             <div class="btns">
-                <router-link to="/khelboo-credentials/login" >
-                    <button class="btn login">Log In</button>
-                </router-link>
-                <router-link to="/khelboo-credentials/signup">
-                    <button class="btn signup">Sign Up</button>
-                </router-link>
+                
+                <router-link to="/khelboo-credentials/login" class="btn login">Log In</router-link>
+                <router-link to="/khelboo-credentials/signup" class="btn signup">Sign Up</router-link>
+                
             </div>
             <input-signup></input-signup>
             <!-- <router-view name="subContent"></router-view> -->
             <div class="extra">
-                <router-link to="/khelboo-credentials/otp">
-                    <button class="btn signup2">Sign Up</button>
-                </router-link>
+                
+                <router-link to="/khelboo-credentials/otp" class="btn signup2">Sign Up</router-link>
                 <div class="or">
                     <hr>
                     <p class="orin">or</p>
@@ -48,24 +48,34 @@ export default{
     
 </template>
 <style scoped>
+.logo{
+    width: 320px;
+    height: 85px;
+}
+.head{
+    height: 150px;
+    /* font-size: 2vw; */
+}
 .login{
+    width: 50%;
     background-color: #D9D9D9;
     color: #474747;
-    position: relative;
-    left: 10px;
+    position: absolute;
+    left: 0px;
     z-index: 1;
-    
 }
 .signup{
+    position: absolute;
+    /* right: px; */
+    width: 55%;
     background-color: #FB8904;
     color: #FFF;
-    position: relative;
-    right: 10px;
+    /* left: 00px; */
+    right: 0px;
     z-index: 2;
 }
 .login:hover{
     background-color: #b3b2b2;
-
 }
 @media ( max-width: 700px){
     .page-left{

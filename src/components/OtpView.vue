@@ -2,9 +2,10 @@
     <div class="inputs">
         <div class="bind">
             <div class="text-div">
-                <p class="txt">OTP Fillup</p>
-            </div>
+                    <p class="txt">OTP Fillup</p>
+                </div>
             <div class="otp-boxs">
+                
                 <input type="text" class="box">
                 <input type="text" class="box">
                 <p class="otp-hipen">-</p>
@@ -19,7 +20,9 @@
 <style scoped>
 .bind{
     width: 100%;
+    height: 85px;
     /* height: 100%; */
+    /* background-color: blue; */
 }
 .text-div{
     padding: 0px 0px 10px 3px ;
@@ -42,17 +45,31 @@
     font-size: 1.5rem;
 }
     .otp-boxs{
+        width: 100%;
+        height: max-content;
         display: flex;
         /* width: 100%; */
         /* background-color: rgb(207, 9, 9); */
         justify-content: space-between;
         align-items: center;
         /* padding: 0px 2vw; */
+    /* background-color: aqua; */
     }
     .box{
-        border-radius: 10px;
-        width: 20%;
-        height: 45px;
+        border-radius: 5px;
+        width: 21%;
+        height: 55px;
+        max-width: 100px;
         border: 1px solid #D9D9D9;
+
+    }
+    @media (max-width: 700px) {
+        .otp-boxs{
+            /* width: 80%; */
+            /* background-color: red; */
+        }
+        .box{
+            /* width: 80px; */
+        }
     }
 </style>

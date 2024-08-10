@@ -1,7 +1,7 @@
 <template>
   <!-- <sign-up></sign-up> -->
   <router-view name="mainContent"></router-view>
-  <footer-view></footer-view>
+  <!-- <footer-view></footer-view> -->
 </template>
   
 <script>

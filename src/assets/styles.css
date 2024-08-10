@@ -2,7 +2,8 @@
     background-color: #D10000;
 }
 a{
-    width: 100%;
+    /* position: absolute; */
+    /* background-color: aqua; */
 }
 .route{
     width: 100%;
@@ -14,7 +15,7 @@ a{
     height: 5rem;
 }
 .welcome{
-    margin-top: 1rem;
+    margin-top: 1px;
     font-weight: 600;
     font-size: 1.5rem;
     text-align: left;
@@ -67,39 +68,55 @@ hr{
 
 
 .btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
     cursor: pointer;
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
     margin-bottom: 0.5rem;
-    width: 50%;
-    height: 35px;
+    height: 45px;
     border-radius: 10px;
     border: 0px;
-    font-size: 1rem;
+    /* font-size: 1rem; */
     font-weight: 600;
     cursor: pointer;
     transition: .3s;
 }
 
 .btns{
-    margin-top: 30px;
+    /* background-color: #D10000; */
+    position: relative;
+    width: 100%;
+    height: 45px;
+    margin-top: 1vw;
     margin-bottom: 20px;
 }
 .main-img{
-    width: 95%;
-    height: 90%;
-    min-width: 300px;
+    width: 40vw;
+    height: 820px;
+    min-width: 350px;
 }
 .page-main-body{
-    margin: 2vw;
-    margin-bottom: 4vh;
+    margin-top: 5vw;
+    /* margin-right: 10vw; */
+    padding-bottom: 5vw;
+    /* width: 90%; */
+    height: 100%;
+    /* padding: 1vw; */
     align-items: center;
     display: flex;
     justify-content: space-around;
+    /* background-color: #D10000; */
 }
+
 .page-left{
-    width: 40vw;
-    height: 120vh;
-    padding: 0vw;
+    /* flex: 2; */
+    min-width: 400px;
+    width: 640px;
+    height: 820px;
+    /* height: max-content; */
+    /* padding: 5vw; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -107,26 +124,56 @@ hr{
     /* background-color: aqua; */
 }
 .page-right{
-    width: 30vw;
-    height: 100%;
-    min-width: 300px;
+    /* flex: 1; */
+    width: 426px;
+    height: 820px;
+    /* height: 100%; */
+    /* min-width: 300px; */
     /* border: 2px solid black; */
     /* width: 50%; */
     /* margin-left: 200px; */
     padding: 2vw;
+    /* padding-right: 4vw; */
+    /* padding-left: 4vw; */
     /* margin:0px 10px 0px 1vw ; */
     /* background-color: blue; */
+    position: relative;
 
 }
+
+body{
+    margin: 0px;
+}
+
 .signup2{
-    width: 100%;
+    width: 308px;
     height: 57px;
     margin-top: 20px;
     background-color: #D10000;
     color: white;
     transition: .3s;
+    text-decoration: none;
 }
 .signup2:hover{
     transform: scale(1.1);
     background-color: black;
+}
+
+.login{
+    width: 50%;
+    background-color: #D9D9D9;
+    color: #474747;
+    position: absolute;
+    left: 0px;
+    z-index: 1;
+}
+.signup{
+    position: absolute;
+    /* right: px; */
+    width: 55%;
+    background-color: #FB8904;
+    color: #FFF;
+    /* left: 00px; */
+    right: 0px;
+    z-index: 2;
 }
