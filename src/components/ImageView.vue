@@ -5,7 +5,7 @@
 </template>
 <style scoped>
 .main-body-image-section{
-    min-width: 400px;
+    min-width: 330px;
     width: 640px;
     height: 820px;
     display: flex;

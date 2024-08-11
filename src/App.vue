@@ -1,7 +1,7 @@
 <template>
 
   <div class="page-main-body poppins-regular">
-    <image-view :class="isImageLeft ? '' : 'imageActive'"></image-view>
+    <image-view :class="isImageLeft ? '' : 'imageActive'" class="image-section-show"></image-view>
     <div class="input-credential-section">
 
       <head-button @sendData="receiveData"></head-button>
@@ -9,7 +9,7 @@
       <extra-view></extra-view>
     
     </div>
-    <image-view :class="isImageLeft ? 'imageActive' : ''"></image-view>
+    <image-view :class="isImageLeft ? 'imageActive' : ''" class="image-section-show"></image-view>
   
   </div>
 
@@ -54,6 +54,7 @@ export default {
 </script>
 
 <style scoped>
+
 .imageActive{
   display: none;
 }
@@ -65,7 +66,7 @@ export default {
     align-items: center;
     display: flex;
     justify-content: space-around;
-    padding: 3vw;
+    padding: 2vw;
 }
 
 .input-credential-section{
@@ -81,6 +82,9 @@ export default {
   }
   .page-main-body{
     justify-content: center;
+  }
+  .image-section-show{
+    display: none;
   }
 }
 </style>
