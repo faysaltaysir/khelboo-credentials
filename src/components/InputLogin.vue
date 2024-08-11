@@ -33,6 +33,7 @@
     }
     .remember-me-div .check-box{
         cursor: pointer;
+        padding-left: 3px;
     }
     .remember-me-div .check-box:hover{
         opacity: 0.7;

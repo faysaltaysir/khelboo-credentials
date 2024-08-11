@@ -13,7 +13,9 @@
         <input type="password" name="confpass" id="confpass" class="input-box-style">
     </div>
     <div class="button-holding-box">
-        <router-link to="/khelboo-credentials/otp" class="button-style signup-login-main-button">Sign Up</router-link>
+        <button class="button-style signup-login-main-button" 
+        @click="otpButton"
+        active-class="active">Sign Up</button>
     </div>
 </div>    
 </template>
@@ -22,6 +24,15 @@
 </style>
 <script>
 export default{
+    data(){
+        return{
 
+        }
+    },
+    methods:{
+        otpButton(){
+            this.$emit('sendData', 'InputOtp');
+        }
+    }
 }
 </script>

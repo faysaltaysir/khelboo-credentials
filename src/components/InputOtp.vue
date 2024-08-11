@@ -17,10 +17,23 @@
     </div>
     
     <div class="button-holding-box">
-        <router-link to="/khelboo-credentials/login" class="button-style signup-login-main-button" active-class="active">Sign Up</router-link>
+        <button class="button-style signup-login-main-button" 
+        @click="otpButton"
+        active-class="active">Sign Up</button>
     </div>
     
 </template>
+<script>
+export default{
+    data(){
+        return{
+
+        }
+    },
+    
+}
+</script>
+
 <style scoped>
 
 
@@ -34,8 +47,8 @@
     color: #433E3F;
     align-items: center;
     justify-content: space-between;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 80px;
+    margin-bottom: 80px;
 }
 
 .otp-hipen {

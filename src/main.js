@@ -11,25 +11,8 @@ const router = createRouter({
     history: createWebHistory(),
     routes: [
         { 
-            path: '/khelboo-credentials/signup', 
-            components: {
-                leftContent: ImageView,
-                subContent:InputSignup 
-            }
-        },
-        { 
-            path: '/khelboo-credentials/otp', 
-            components:{
-                leftContent: ImageView,
-                subContent:InputOtp
-            }
-        },
-        { 
-            path: '/khelboo-credentials/login', 
-            components:{
-                rightContent: ImageView,
-                subContent:InputLogin
-            }
+            path: '/', 
+            
         },
     ]
 });

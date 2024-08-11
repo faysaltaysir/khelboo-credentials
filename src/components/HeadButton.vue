@@ -8,11 +8,47 @@
     <!-- signup login -->
     <div class="signup-login-button-merge-section">
 
-        <router-link to="/khelboo-credentials/login" class="button-style login-merge-button" active-class="active">Log In</router-link>
-        <router-link to="/khelboo-credentials/signup" class="button-style signup-merge-button" :class="isSignUpActive ? 'active' : ''">Sign Up</router-link>
+        <button class="button-style login-merge-button" @click="loginButton" 
+            :class="isLogin ? 'active' : ''"> Log In</button>
+        <button class="button-style signup-merge-button" @click="signupButton" 
+            :class="isSignup ? 'active' : ''">Sign Up</button>
     </div>
 
 </template>
+
+<script>
+
+export default {
+    
+    name: 'HeadButton',
+    computed: {
+        isSignUpActive() {
+
+            // isSignupActive=false;
+            return true;
+        }
+    },
+    data(){
+        return{
+            isSignup: true,
+            isLogin: false,
+        }
+    },
+    methods: {
+        loginButton() {
+            this.isSignup=false;
+            this.isLogin=true;
+            this.$emit('sendData', 'InputLogin');
+        },
+        signupButton() {
+            this.isSignup=true;
+            this.isLogin=false;
+            this.$emit('sendData', 'InputSignup');
+        },
+    }
+}
+</script>
+
 <style scoped>
 .button-style:hover{
     background-color: #c4c4c4;
@@ -61,13 +97,3 @@
     background-color: #ffa33a;
 }
 </style>
-<script>
-export default {
-    computed: {
-        isSignUpActive() {
-            return this.$route.path.includes('/khelboo-credentials/signup') ||
-                this.$route.path.includes('/khelboo-credentials/otp');
-        }
-    }
-}
-</script>
