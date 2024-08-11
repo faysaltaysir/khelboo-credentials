@@ -1,7 +1,7 @@
 <template>
     <!-- head -->
     <div class="head">
-        <p><img src="./assets/logo-main.png" alt="" class="logo"></p>
+        <p><img src="../assets/logo-main.png" alt="" class="logo"></p>
         <p class="welcome">Welcome Back!</p>
         <p class="para">Enter your credential to access your account</p>
     </div>
@@ -14,7 +14,7 @@
     </div>
 </template>
 <style scoped>
-    
+   
 </style>
 <script>
 export default{

@@ -25,10 +25,6 @@
     height: 81px;
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
-    /* align-items: end; */
-
-/* background-color: aqua; */
 }
 .inputs{
     display: flex;

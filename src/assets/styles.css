@@ -80,6 +80,11 @@ hr{
     font-weight: 600;
     cursor: pointer;
     transition: .5s;
+    color: #727272;
+}
+.btn:hover{
+    background-color: #525151;
+    color: #D9D9D9;
 }
 
 .btns{
@@ -94,10 +99,11 @@ hr{
     width: 40vw;
     height: 820px;
     min-width: 350px;
+    /* margin: 3vw; */
+    
 }
 .page-main-body{
     margin-top: 5vw;
-    /* margin-right: 10vw; */
     padding-bottom: 5vw;
     /* width: 90%; */
     height: 100%;
@@ -106,6 +112,7 @@ hr{
     display: flex;
     justify-content: space-around;
     /* background-color: #D10000; */
+    padding: 3vw;
 }
 
 .page-left{
@@ -114,14 +121,16 @@ hr{
     width: 640px;
     height: 820px;
     /* height: max-content; */
-    /* padding: 5vw; */
+    /* padding-left: 1vw; */
     display: flex;
     align-items: center;
     justify-content: center;
     /* height: 80vh; */
     /* background-color: aqua; */
+    /* margin: 0vw 2vw 0vw 2vw; */
 }
 .page-right{
+    /* margin: 0vw 10vw 0vw 4vw; */
     /* flex: 1; */
     width: 426px;
     height: 820px;
@@ -140,7 +149,7 @@ hr{
 }
 
 body{
-    margin: 0px;
+    /* margin: 0px; */
 }
 
 .signup2{
@@ -176,7 +185,7 @@ body{
     z-index: 2;
 }
 .input-box-style{
-    width: 100%;
+    width: 95%;
     height: 55px;
     border-radius: 7px; 
     border: 1px solid #D9D9D9;
@@ -187,12 +196,12 @@ body{
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
 
 }
-.input-box-style:hover{
+.box:hover , .input-box-style:hover{
     border-color:#D9D9D9; 
     box-shadow: 0 0 8px 2px #D9D9D9; 
     outline: none;
 }
-.input-box-style:focus{
+.box:focus , .input-box-style:focus{
     border-color: #007bff; 
     box-shadow: 0 0 8px 2px rgba(0, 123, 255, 0.7); 
     outline: none;

@@ -73,11 +73,7 @@
     
 }
 
-.box:focus {
-  border-color: #007bff; 
-  box-shadow: 0 0 8px 2px rgba(0, 123, 255, 0.7); 
-  outline: none; 
-}
+
 
 @media (max-width: 700px) {
     /* .otp-boxs{
