@@ -10,7 +10,6 @@
     
     </div>
     <image-view :class="isImageLeft ? 'imageActive' : ''"></image-view>
-    <!-- <router-view name="rightContent" class="router-view"></router-view> -->
   
   </div>
 
@@ -30,7 +29,6 @@ export default {
   },
   data(){
     return{
-      // toggleValue: 'InputSignup',
       isImageLeft: true,
       receivedMessage: 'InputSignup'
     }
