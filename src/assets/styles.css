@@ -28,7 +28,8 @@
     font-weight: 600;
     cursor: pointer;
     transition: .5s;
-    color: #727272;
+    color: #474747;
+    background-color: #D9D9D9;
 }
 
 .button-holding-box{

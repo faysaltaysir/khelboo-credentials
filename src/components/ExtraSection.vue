@@ -6,8 +6,10 @@
             <hr>
         </div>
         <div class="rectangle-button-section">
-            <button class="rectangle-button-style google">Sign in with Google+</button>
-            <button class="rectangle-button-style facebook">Login with Facebook</button>
+            <img src="../assets/facebook-pic.png" alt="facebook" class="rectangle-button-style google">
+            <img src="../assets/google-pic.png" alt="google" class="rectangle-button-style facebook">
+            <!-- <button class="rectangle-button-style google">Sign in with Google+</button>
+            <button class="rectangle-button-style facebook">Login with Facebook</button> -->
         </div>
 
     </div>
@@ -46,21 +48,21 @@ hr {
 }
 
 .rectangle-button-style {
-    font-size: 1.1rem;
+    /* font-size: 1.1rem; */
     height: 40px;
-    color: white;
+    /* color: white; */
     border: 0px;
     transition: .3s;
     cursor: pointer;
 }
 
 .google {
-    background-color: #f30202;
+    /* background-color: #f30202; */
     margin: 5px;
 }
 
 .facebook {
-    background-color: rgb(0, 149, 229);
+    /* background-color: rgb(0, 149, 229); */
     margin: 5px;
 }
 </style>

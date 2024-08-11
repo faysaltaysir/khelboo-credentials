@@ -8,10 +8,8 @@
     <!-- signup login -->
     <div class="signup-login-button-merge-section">
 
-        <router-link to="/khelboo-credentials/login" class="button-style login-merge-button" 
-            active-class="active">Log In</router-link>
-        <router-link to="/khelboo-credentials/signup" class="button-style signup-merge-button"
-            :class="isSignUpActive ? 'active' : ''">Sign Up</router-link>
+        <router-link to="/khelboo-credentials/login" class="button-style login-merge-button" active-class="active">Log In</router-link>
+        <router-link to="/khelboo-credentials/signup" class="button-style signup-merge-button" :class="isSignUpActive ? 'active' : ''">Sign Up</router-link>
     </div>
 
 </template>
@@ -41,8 +39,6 @@
 
 .login-merge-button {
     width: 50%;
-    background-color: #D9D9D9;
-    color: #474747;
     position: absolute;
     left: 0px;
     z-index: 1;
@@ -51,7 +47,6 @@
 .signup-merge-button {
     position: absolute;
     width: 55%;
-    background-color: #D9D9D9;
     right: 0px;
     z-index: 2;
 }
