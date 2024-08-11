@@ -1,10 +1,10 @@
 <template>
 
-  <div class="page-main-body">
+  <div class="page-main-body poppins-regular">
     
-    <router-view name="leftContent" class="view"></router-view>    
+    <router-view name="leftContent" class="router-view"></router-view>    
     
-    <div class="page-right">
+    <div class="input-credential-section">
 
       <head-button></head-button>
       <router-view name="subContent"></router-view>
@@ -12,56 +12,51 @@
     
     </div>
     
-    <router-view name="rightContent" class="view"></router-view>
+    <router-view name="rightContent" class="router-view"></router-view>
   
   </div>
 
-  <!-- <footer-view></footer-view> -->
 </template>
 
 <script>
-import FooterView from './components/FooterView.vue'
 import ImageView from './components/ImageView.vue';
 import HeadButton from './components/HeadButton.vue';
 import InputSignup from './components/InputSignup.vue';
-import ExtraView from './components/Extra.vue'
+import ExtraView from './components/ExtraSection.vue'
 export default {
   name: 'App',
   components: {
-     FooterView, ImageView, HeadButton, InputSignup, ExtraView
+    ImageView, HeadButton, InputSignup, ExtraView
   }
 }
 </script>
 
-<style>
+<style scoped>
 
-.active{
-  background-color: #FB8904;
-  color: #FFF;
-  z-index: 3;
-}
-.active:hover{
-  background-color: #ffa33a;
-  /* opacity: .9; */
-}
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+
+.page-main-body{
+    margin-top: 5vw;
+    padding-bottom: 5vw;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    padding: 3vw;
 }
 
-* {
-  margin: 0px;
-  /* background-color: burlywood; */
+.input-credential-section{
+    width: 426px;
+    height: 820px;
+    padding: 2vw;
+    position: relative;
+
+}
+@media (max-width: 700px){
+  .router-view{
+    display: none;
   }
-  @media (max-width: 700px){
-    .view{
-     display: none;
-    }
-    .page-main-body{
-      justify-content: center;
-    }
+  .page-main-body{
+    justify-content: center;
   }
+}
 </style>
